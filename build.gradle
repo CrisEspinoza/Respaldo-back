@@ -26,7 +26,7 @@ repositories {
 }
 
 dependencies {
-    // JPA Data (We are going to use Repositories, Entities, Hibernate, etc...)
+       // JPA Data (We are going to use Repositories, Entities, Hibernate, etc...)
     compile ('org.springframework.boot:spring-boot-starter-data-jpa')
     compile("org.springframework.boot:spring-boot-starter-web")
     testCompile('org.springframework.boot:spring-boot-starter-test')
@@ -43,9 +43,14 @@ dependencies {
     compile 'org.mongodb:mongo-java-driver:3.8.0-beta2'
     compile 'org.mongodb:mongodb-driver-core:3.8.0-beta2'
     compile group: 'org.apache.opennlp', name: 'opennlp-tools', version: '1.8.4'
-    compile('org.springframework.boot:spring-boot-starter-security')
 
+    //Security
+    compile('org.springframework.boot:spring-boot-starter-security')
     testCompile('org.springframework.security:spring-security-test')
 
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.7'
+    compile group: 'org.json', name: 'json', version: '20180130'
+    compile("org.twitter4j:twitter4j-stream:4.0.2");
+
+    compile('org.springframework.boot:spring-boot-starter-data-neo4j')
 }
